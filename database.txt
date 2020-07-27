@@ -1,0 +1,9 @@
+create database foodexpres;
+use foodexpress;
+create table signup(username varchar(20) primary key,emailid varchar(30) unique key,phnno varchar(15) unique key,pwd varchar(20) not null,address varchar(50));
+insert into signup values ('Shyam Pippiri','pippirishyam5@gmail.com','9494850484','sachinshyam5','4-2-33,kamareddy,telangana');
+select * from signup;
+create table feedback(fname varchar(20) not null,lname varchar(20) not null,areacode varchar(20) not null,telno varchar(20) not null,emailid varchar(30) unique,feedback varchar(50) not null);
+insert into feedback values ('Shyam','pippiri','503111','9494850484','pippirishyam5@gmail.com','Its really tasty');
+insert into signup values ('Shiva Reddy','shivanarasimha@gmail.com','97981093083','shiva@123','5-1-99,uppal,hyderabad,telangana');
+insert into signup values ('Saiteja pulluri','saitejapulluri@gmail.com','8106820978','saiteja@789','45-11-77,karimnagar,telangana');
